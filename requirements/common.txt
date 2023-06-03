@@ -1,0 +1,15 @@
+fastapi
+uvicorn
+more_itertools
+sqlmodel
+pydantic
+toolz
+genson
+asyncpg
+greenlet
+alembic
+rich
+supertokens-python
+requests
+boto3
+celery[sqs]

@@ -1,0 +1,10 @@
+mypy
+python-dotenv
+black
+types-requests
+types-PyMySQL
+types-Pygments
+types-psycopg2
+types-python-dateutil
+types-ujson
+boto3-stubs[s3]
