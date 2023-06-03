@@ -25,6 +25,16 @@ Additionally, the codebase showcases the following things:
 - Project dependencies using requirements.txt
 - And more.
 
+## Inspiration
+
+I took a ton of inspiration from the following articles and projects:
+
+[Abstracting FastAPI Services](https://camillovisini.com/article/abstracting-fastapi-services/)
+
+[grillazz/fastapi-sqlalchemy-asyncpg](https://github.com/grillazz/fastapi-sqlalchemy-asyncpg)
+
+[The ultimate async setup: FastAPI, SQLModel, Alembic, Pytest](https://medium.com/@estretyakov/the-ultimate-async-setup-fastapi-sqlmodel-alembic-pytest-ae5cdcfed3d4)
+
 ## Project structure
 
 The project is organized into the following directories and files:
