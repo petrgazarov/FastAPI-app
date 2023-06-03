@@ -1,4 +1,4 @@
-# FastAPI-app
+# FastAPI App
 
 This is a small app that I built while learning Python and FastApi. It allows to create documentations (shared schemas + screenshots) from tracking events. It also serves as a backend for an interface that lets a user register, sign in, set some settings and view documentations.
 
