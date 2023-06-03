@@ -29,8 +29,5 @@ rollback:
 rollback_base:
 		alembic downgrade base
 
-seed:
-		PYTHONPATH=$(PWD) python app/db/seeds/all.py
-
 reset:
 		make rollback migrate seed
