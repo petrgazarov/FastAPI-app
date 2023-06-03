@@ -1,1 +1,3 @@
-# FastAPI app example that uses SQLModel, Asyncio, Supertokens, Alembic, AWS S3, Celery, Logger
+# FastAPI-app
+
+Example app using FastAPI, SQLModel, Celery, Alembic and Supertokens
