@@ -1,6 +1,6 @@
 # FastAPI-app
 
-This is a small app that I built while learning Python and FastApi. It allows to create documentations (shared schemas + screenshots) from tracking events. It also serves as a backend for the interface that lets a user register, sign in, set some settings and view documentations.
+This is a small app that I built while learning Python and FastApi. It allows to create documentations (shared schemas + screenshots) from tracking events. It also serves as a backend for an interface that lets a user register, sign in, set some settings and view documentations.
 
 While building this app, I spent the most time learning the best practices of accomplishing common tasks in the FastAPI ecosystem. I tried out various libraries and arrived at the following list that I think work well together:
 
@@ -13,6 +13,7 @@ While building this app, I spent the most time learning the best practices of ac
 - Make for running commands
 
 Additionally, the codebase showcases the following things:
+
 - Multiple FastAPI apps in one project
 - Alembic auto-generating migrations from model files
 - Celery tasks communicating through an SQS FIFO queue
@@ -28,20 +29,21 @@ Additionally, the codebase showcases the following things:
 
 The project is organized into the following directories and files:
 
-background_tasks/ - Celery tasks
-crud/ - CRUD operations
-db/ - Alembic migrations
-models/ - model files that combine data models and Pydantic schemas
-schemas/ - Pydantic schemas for things other than data models (e.g. api requests and responses)
-services/ - business logic
-subapps/ - FastAPI apps with each file containing a separate app
-utils/ - utility functions
-celery.py - Celery app
-config.py - Pydantic settings
-database.py - SQLAlchemy database engine and session
-dependencies.py - FastAPI dependencies
-main.py - main project file
-
+| Directory/File Name | Description                                                                          |
+| ------------------- | ------------------------------------------------------------------------------------ |
+| background_tasks/   | Celery tasks                                                                         |
+| crud/               | CRUD operations                                                                      |
+| db/                 | Alembic migrations                                                                   |
+| models/             | model files that combine data models and Pydantic schemas                            |
+| schemas/            | Pydantic schemas for things other than data models (e.g. api requests and responses) |
+| services/           | business logic                                                                       |
+| subapps/            | FastAPI apps with each file containing a separate app                                |
+| utils/              | utility functions                                                                    |
+| celery.py           | Celery app                                                                           |
+| config.py           | Pydantic settings                                                                    |
+| database.py         | SQLAlchemy database engine and session                                               |
+| dependencies.py     | FastAPI dependencies                                                                 |
+| main.py             | main project file                                                                    |
 
 ## Running the project
 
