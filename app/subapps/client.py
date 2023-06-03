@@ -61,27 +61,3 @@ async def create_event(
         message_properties={"MessageGroupId": account.id},
     )
     return event
-
-
-@client_app.get(
-    "/{write_key}/glaza.min.js",
-    responses={200: {"content": {"application/javascript": {}}}},
-    response_class=Response,
-)
-async def get_client_script(
-    write_key: str,
-    request: Request,
-    origin: Annotated[str, Header()],
-) -> Response:
-    account = await crud.Account(db=request.state.db).find_by({"write_key": write_key})
-    if account is None:
-        raise HTTPException(status_code=404)
-    domains = await crud.Domain(db=request.state.db).find_all(
-        where={"account_id": account.id, "name": origin}
-    )
-    if len(domains) == 0:
-        file_name = "domain-not-configured.min.js"
-    else:
-        file_name = "glaza.min.js"
-    content = open(f"app/static/client/{file_name}", "r").read()
-    return Response(content=content, media_type="application/javascript")

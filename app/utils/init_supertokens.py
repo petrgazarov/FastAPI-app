@@ -102,7 +102,7 @@ def override_thirdparty_apis(original_implementation: APIInterface) -> APIInterf
 def init_supertokens() -> None:
     init(
         app_info=InputAppInfo(
-            app_name="Glaza",
+            app_name="FastAPI App",
             api_domain="localhost:8000",
             website_domain=settings.app_url,
             api_base_path="/auth",

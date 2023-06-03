@@ -32,7 +32,7 @@ class Screenshot(BaseFile, table=True):
 
     @classmethod
     def bucket_name(cls) -> str:
-        return "glaza-screenshots"
+        return "fastapi_app-screenshots"
 
     event: "Event" = Relationship(back_populates="screenshot")
     account: "Account" = Relationship(back_populates="screenshots")
