@@ -54,5 +54,6 @@ class EventDocumentationCreate(PydanticModelBase):
     domains: List[str]
     paths: List[str]
 
+
 class EventDocumentationUpdate(PydanticModelBase):
     last_seen: datetime
