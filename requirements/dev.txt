@@ -8,3 +8,4 @@ types-psycopg2
 types-python-dateutil
 types-ujson
 boto3-stubs[s3]
+pre-commit

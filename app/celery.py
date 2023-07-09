@@ -1,5 +1,5 @@
-from celery import Celery # type: ignore
-from kombu.utils.url import safequote # type: ignore
+from celery import Celery  # type: ignore
+from kombu.utils.url import safequote  # type: ignore
 from app import config
 
 settings = config.get_settings()
