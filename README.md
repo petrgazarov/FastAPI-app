@@ -80,8 +80,6 @@ If you are using this project then pre-commit setup would be very helpful for ch
 
 
 ```commandline
-pip install pre-commit
-pre-commit --version
 pre-commit install
 
 # for the first time, run on all files
