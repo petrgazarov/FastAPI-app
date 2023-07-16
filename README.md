@@ -73,6 +73,19 @@ The project is organized into the following directories and files:
 4. Rename `.env.example` to `.env` and fill in the values
 5. Run `make server` and `make worker` to start the web server and the Celery worker
 
+
+## Pre-Commit Setup
+
+If you are using this project then pre-commit setup would be very helpful for checking your codebase. In short, pre-commit is a tool that allows developers to define and apply automated checks to their code before they commit it to a version control system. You can find more info [here](https://pre-commit.com)
+
+
+```commandline
+pre-commit install
+
+# for the first time, run on all files
+pre-commit run --all-files
+```
+
 ## License
 
 MIT License
