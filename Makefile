@@ -1,18 +1,14 @@
 install:
-		pip install --no-cache-dir -r requirements/common.txt
-
-install_dev:
-		pip install --no-cache-dir -r requirements/common.txt
-		pip install --no-cache-dir -r requirements/dev.txt
+		poetry install
 
 server:
-		uvicorn app.main:app --reload
+		uvicorn fastapi_app.main:app --reload
 
 worker:
-		celery -A app.celery worker --loglevel=info --concurrency=5
+		celery -A fastapi_app.celery worker --loglevel=info --concurrency=5
 
 lint:
-		mypy app
+		mypy fastapi_app
 
 migration_generate:
 		alembic revision -m "$(name)"
