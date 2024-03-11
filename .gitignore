@@ -33,3 +33,6 @@ next-env.d.ts
 # python
 __pycache__
 .mypy_cache
+
+# vertual environment
+.venv
