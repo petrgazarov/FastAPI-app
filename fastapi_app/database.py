@@ -3,7 +3,7 @@ from sqlalchemy.ext.asyncio import AsyncSession, create_async_engine
 from sqlalchemy.orm import sessionmaker
 from fastapi_app import config, utils
 
-logger = utils.AppLogger.__call__().get_logger()
+logger = utils.AppLogger().get_logger()
 
 engine = create_async_engine(
     config.get_settings().database_url,

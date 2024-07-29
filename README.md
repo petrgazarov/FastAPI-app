@@ -76,7 +76,7 @@ The project is organized into the following directories and files:
 
 ## Pre-Commit Setup
 
-If you are using this project then pre-commit setup would be very helpful for checking your codebase. In short, pre-commit is a tool that allows developers to define and apply automated checks to their code before they commit it to a version control system. You can find more info [here](https://pre-commit.com)
+If you are using this project then pre-commit setup would be very helpful for checking your codebase. In short, pre-commit is a tool that allows developers to define and apply automated checks to their code before they commit it to a version control system. You can find more info [here](https://pre-commit.com).
 
 
 ```commandline

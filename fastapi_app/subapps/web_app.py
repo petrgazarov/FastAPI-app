@@ -10,7 +10,7 @@ from fastapi_app.utils.init_supertokens import init_supertokens
 from fastapi_app.schemas import api as schemas_api
 from uuid import UUID
 
-logger = utils.AppLogger.__call__().get_logger()
+logger = utils.AppLogger().get_logger()
 
 
 def custom_generate_unique_id(route: APIRoute) -> str:

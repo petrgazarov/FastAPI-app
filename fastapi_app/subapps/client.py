@@ -11,7 +11,7 @@ from fastapi_app import services, crud, dependencies, utils, models
 from fastapi_app.background_tasks import calculate_event_documentation
 from fastapi_app.schemas import api as schemas_api
 
-logger = utils.AppLogger.__call__().get_logger()
+logger = utils.AppLogger().get_logger()
 
 client_app = FastAPI(
     dependencies=[
