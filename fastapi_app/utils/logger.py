@@ -6,12 +6,12 @@ from .singleton import SingletonMeta
 
 
 class AppLogger(metaclass=SingletonMeta):
-    _logger = None
+    _logger: logging.Logger
 
     def __init__(self) -> None:
         self._logger = logging.getLogger(__name__)
 
-    def get_logger(self) -> logging.Logger | None:
+    def get_logger(self) -> logging.Logger:
         return self._logger
 
 

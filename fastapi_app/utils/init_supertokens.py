@@ -18,7 +18,7 @@ from .logger import AppLogger
 
 settings = config.get_settings()
 
-logger = AppLogger.__call__().get_logger()
+logger = AppLogger().get_logger()
 
 
 class GitHubApiError(Exception):

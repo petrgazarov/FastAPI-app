@@ -4,7 +4,7 @@ from fastapi.exceptions import RequestValidationError
 from fastapi.routing import APIRoute
 from .logger import AppLogger
 
-logger = AppLogger.__call__().get_logger()
+logger = AppLogger().get_logger()
 
 
 # log request body on validation error
